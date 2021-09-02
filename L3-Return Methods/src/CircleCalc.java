@@ -1,15 +1,25 @@
-public class CircleCalc {
+import javax.swing.*;
 
+class ParameterExample {
 
     public static void main(String[] args) {
+        double width = Double.parseDouble(JOptionPane.showInputDialog("What is the width?"));
+        double length = Double.parseDouble(JOptionPane.showInputDialog("What is the length"));
 
-        //create and run the program
 
+        area(width, length);
+        perimeter(width, length);
     }
 
-    //re-write the method to calculate a circle's area using parameters and return statement
+    public static void area( double width, double length){
 
+        double area = width * length;
+        JOptionPane.showMessageDialog(null, "The area is " + area);
+    }
 
-    //re-write the method to calculate a circle's perimeter using parameters and return statement
+    public static void perimeter(double width, double length){
 
+        double perimeter = width + length * 2;
+        JOptionPane.showMessageDialog(null, "The perimeter is " + perimeter);
+    }
 }
