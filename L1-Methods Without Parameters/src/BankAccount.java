@@ -1,6 +1,6 @@
 import javax.swing.*;
 import java.text.DecimalFormat;
-class CircleCalc {
+public class CircleCalc {
 
 
     public static void main(String[] args) {

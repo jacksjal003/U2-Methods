@@ -1,3 +1,5 @@
+import javax.swing.*;
+
 public class LastLetterWord {
 
     /*
@@ -7,12 +9,25 @@ public class LastLetterWord {
     Use a method to find and return the last three letters and a string parameter.
 
     Ex:  Goodbye, Hello, Morning -> byelloing
+
+    1. Get out word
+    2. Isolate the last 3 letters
+    3. combine everything
+    4. output
     */
 
     public static void main(String[] args) {
+        String word1 = JOptionPane.showInputDialog("Enter word 1");
+        String word2 = JOptionPane.showInputDialog("Enter word 2");
+        String word3 = JOptionPane.showInputDialog("Enter word 3");
 
-
+        JOptionPane.showMessageDialog(null, lastThree(word1) + lastThree(word2) + lastThree(word3));
 
     }
+
+  public static String lastThree (String word){
+
+        return word.substring(word.length()-3);
+  }
 
 }
