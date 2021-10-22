@@ -3,7 +3,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class ColorSwitchGUI {
+public class colorSwitchGUI {
 
     //Declare your frame, panel and three buttons.
     JFrame window = new JFrame("Color Switch-a-roo");
@@ -12,7 +12,7 @@ public class ColorSwitchGUI {
     JButton buttonThemeWarren = new JButton("Theme: Warren");
     JButton buttonThemePrimary = new JButton("Theme; Primary");
 
-    public ColorSwitchGUI() {
+    public colorSwitchGUI() {
         //create you GUI
         window.setSize(400, 300);
         window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -47,7 +47,7 @@ public class ColorSwitchGUI {
             buttonThemePrimary.setForeground(buttonText);
         }
 
-        private static class ThemePrimary implements ActionListener {
+        private class ThemePrimary implements ActionListener {
 
 
             @Override
